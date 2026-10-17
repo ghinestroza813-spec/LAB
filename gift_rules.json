@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "moves": {
+    "punch":   { "label": "Soco rápido", "damage": 5 },
+    "kick":    { "label": "Chute",       "damage": 9 },
+    "special": { "label": "Especial",    "damage": 16 },
+    "super":   { "label": "Supergolpe",  "damage": 30 }
+  },
+  "keyboard": {
+    "1": { "side": "A", "move": "punch" },
+    "2": { "side": "A", "move": "kick" },
+    "3": { "side": "A", "move": "special" },
+    "4": { "side": "A", "move": "super" },
+    "a": { "side": "A", "move": "punch" },
+    "6": { "side": "B", "move": "punch" },
+    "7": { "side": "B", "move": "kick" },
+    "8": { "side": "B", "move": "special" },
+    "9": { "side": "B", "move": "super" },
+    "l": { "side": "B", "move": "punch" }
+  },
+  "tiktok": {
+    "_comment": "Exemplos a validar: os nomes/IDs reais dependem da fonte de eventos escolhida. 'side' define qual lutador ataca; 'auto' alterna entre A e B.",
+    "default_side": "auto",
+    "rules": [
+      { "kind": "like",    "name": "*",    "move": "punch" },
+      { "kind": "comment", "name": "*",    "move": "kick" },
+      { "kind": "gift",    "name": "Rose", "move": "special" },
+      { "kind": "gift",    "name": "*",    "move": "super", "min_diamonds": 100 }
+    ]
+  }
+}
